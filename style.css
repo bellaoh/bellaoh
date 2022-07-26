@@ -1,0 +1,279 @@
+body{
+  background: #f2f3ec;
+  /*margin:0px;
+  padding: 0px;*/
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*collective headline list*/
+ul{
+  list-style:none;
+}
+
+/*each headline list*/
+a{
+  text-decoration: none;
+}
+
+/*bottom section under headline*/
+.section-one{
+  width: 100vw;
+  height:95vh;
+  background-color: #b5aca3;
+  background-size: cover;
+  position:relative;
+}
+
+.section-two{
+  width: 100vw;
+  height:80vh;
+  background-color: #b5aca3;
+  background-size: cover;
+  position: relative;
+}
+
+/*headline bar*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:10vh;
+  /*height: calc(15vh - 1vw);*/
+  background-color: #f2f3ec;
+  /*box-shadow:2px 2px 12px rgba(0,0,0,0.2);*/
+  padding:0px 5%;
+}
+
+nav ul{
+  display:flex;
+}
+
+/*headline font*/
+nav ul li a{
+  font-display: flex;
+  margin: 5vh;
+  font-family: optima;
+  color:#505050;
+  font-size: 2vw;
+  letter-spacing: 0.4vh;
+  font-weight:500;
+
+  /*@media only screen and (max-width: 50vw) {
+        font-size: 12px;
+  }*/
+}
+
+/*class for headline options*/
+.active{
+  color:#2d2a2a;
+}
+
+/*name font*/
+.logo{
+  font-family: optima;
+  color: #000000;
+  font-size: 4vw;
+  letter-spacing: 0.4vh;
+  font-weight:bold;
+}
+
+.text-container p:nth-child(1){
+  font-family:'Tenor Sans';
+  font-weight:bold;
+  letter-spacing: 0.1vw;
+  color:#0b0b0b;
+  font-size: 2.5vw;
+}
+
+.text-container p:nth-child(2){
+  font-family:'Tenor Sans';
+  font-weight:bold;
+  letter-spacing: 0.1vw;
+  color:#0b0b0b;
+  font-size:2.5vw;
+}
+.text-container p:nth-child(3){
+  font-family:'Tenor Sans';
+  letter-spacing: 0.1vw;
+  color:#0b0b0b;
+  font-size:1.5vw;
+}
+
+
+
+/*spacing and stuff for my three lines of intro*/
+.text-container p{
+  line-height:5vh;
+  /*margin:45px 0px 25px;*/
+}
+
+.text-container{
+  position: absolute;
+  left:40%;
+  top:30%;
+  right:10%;
+  /*transform:translate(-13%,-42%);*/
+}
+
+.text-container button{
+  left:40%;
+  width:10vw;
+  height:3.5vw;
+  border-radius:1vw;
+  margin-right: 1vw;
+  font-family: optima;
+  font-weight: bold;
+  font-size: 1vw;
+  outline: none;
+  text-decoration: none;
+}
+
+.email-btn{
+  border:2px solid #373636;
+}
+
+.email-btn a{
+  color:black;
+}
+
+.down-cv{
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none;
+}
+
+.down-cv a{
+  color: white;
+}
+
+button:active{
+  transform:scale(1.1);
+}
+
+/*profile picture*/
+.model{
+  height:50vh;
+  position:absolute;
+  left:10vw;
+  top:30vh;
+}
+
+.about-container{
+  width:90%;
+  left:5vw;
+  height:70vh;
+  background-color: #f2f3ec;
+  border-radius: 2vh;
+  /*box-shadow: 2px 2px 12px rgba(0,0,0,0.2);*/
+  display:flex;
+  position: relative;
+  justify-content:space-evenly;
+  align-items:center;
+  color:#2d2a2a;
+}
+
+/*.about-container img{
+  height:250px;
+}*/
+
+.about-text{
+  width:80%;
+}
+
+.about-text p:nth-child(1){
+  color:#403e3e;
+  font-family: optima;
+  font-weight: bold;
+  font-size:2.5vw;
+  line-height: 0.1vh;
+  letter-spacing: 0.1vw;
+}
+
+.about-text p:nth-child(2){
+  color:#3e3d3d;
+  font-size:1.5vw;
+  font-family:'Tenor Sans';
+  font-weight: bold;
+  line-height: 5vh;
+  letter-spacing: 0.1vw;
+}
+
+.about-text p:nth-child(3),
+.about-text p:nth-child(4),
+.about-text p:nth-child(5),
+.about-text p:nth-child(6){
+  color:#373636;
+  font-family:'Tenor Sans';
+  font-size: 1.25vw;
+  line-height: 3.5vh;
+}
+
+.about-text button{
+  width: 120px;
+  height: 40px;
+  color:#ffffff;
+  outline: none;
+  border:none;
+  font-family: calibri;
+  background-color: #262525;
+}
+
+footer{
+  height:30vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#f2f3ec;
+  font-family: optima;
+  letter-spacing: 0.1vw;
+}
+
+.footer p{
+  font-family: calibri;
+  
+}
+
+footer p:nth-child(1){
+  font-size:2.5vw;
+  font-weight:bold;
+  color:#191919;
+  line-height:3.5vh;
+}
+
+.social-icons a{
+  width:4vw;
+  height:4vw;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  background-color: lightslategray;
+  margin: 2vw;
+  border-radius: 50%;
+  color:#000000;
+  display: inline-flex;
+
+}
+
+.social-icons{
+  display:inline-flex;
+  align-items: center;
+}
+
+
+
+.social-icons a:hover{
+  background-color: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  transition: all ease 0.5s;
+}
+
+
+
+
+
+
+
+
