@@ -1,7 +1,7 @@
 body{
   /*background: #f2f3ec;*/
   /*background: #DADCDB;*/
-  background: #E8E7E3;
+  background: #E9E7E7;
   /*margin:0px;
   padding: 0px;*/
   margin: 0;
@@ -19,27 +19,56 @@ a{
   text-decoration: none;
 }
 
-/*bottom section under headline*/
+/*bottom section of INDEX under headline*/
 .section-one{
   width: 100vw;
   height:95vh;
-  background-color: #E8E7E3;
+  background-color: #E9E7E7;
   background-size: cover;
   position:relative;
+
 }
 
+/*vertical lines for INDEX page*/
+.vertical{
+  z-index:2;
+  border-left: 0.1vw solid #5C5D5F;
+  height: 85vh;
+  position:absolute;
+  left: 5%;
+}
+
+.vertical-right-image{
+  z-index:2;
+  border-right: 0.1vw solid #5C5D5F;
+  height: 85vh;
+  position:absolute;
+  left: 35%;
+}
+
+.vertical-right{
+  border-right: 0.1vw solid #5C5D5F;
+  height: 85vh;
+  position:absolute;
+  left: 95%;
+}
+
+/*bottom section of ABOUT under headline*/
 .section-two{
   width: 100vw;
   height:100vh;
-  background-color:#ded6cc;
+  /*background-color:#ded6cc;*/
+  background-color: #E9E7E7;
   background-size: cover;
   /*position: relative;*/
 }
 
+/*bottom section of LEARNING under headline*/
 .section-three{
   width: 100vw;
   height:100vh;
-  background-color:#DADCDB;
+  /*background-color:#DADCDB;*/
+  background-color: #E9E7E7;
   background-size: cover;
   position: relative;
 }
@@ -51,7 +80,8 @@ nav{
   align-items: center;
   height:10vh;
   /*height: calc(15vh - 1vw);*/
-  background-color: #E8E7E3;
+  /*background-color: #E8E7E3;*/
+  background-color: #E9E7E7;
   /*box-shadow:2px 2px 12px rgba(0,0,0,0.2);*/
   padding:0px 5%;
   border-bottom: 0.1vw solid #5C5D5F;
@@ -83,7 +113,7 @@ nav ul li a{
   color:#2d2a2a;
 }*/
 
-/*name font*/
+/*Logo name font*/
 .logo{
   font-family: optima;
   color: #000000;
@@ -91,44 +121,51 @@ nav ul li a{
   letter-spacing: 0.4vh;
   font-weight:bold;
 }
-/*font for 3 lines of intro*/
+
+/*font for 3 lines of INDEX intro*/
 .text-container p:nth-child(1){
-  font-family:'DM Sans';
+  /*font-family:'DM Sans';*/
+  font-family: optima;
   letter-spacing: 0.1vw;
   color:#0b0b0b;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 .text-container p:nth-child(2){
-  font-family:'Tenor Sans';
+  /*font-family:'Tenor Sans';*/
+  font-family: optima;
   font-weight:bold;
   letter-spacing: 0.1vw;
   color:#0b0b0b;
-  font-size:2.5vw;
+  font-size:3vw;
 }
 .text-container p:nth-child(3){
-  font-family:'Tenor Sans';
+  /*font-family:'Tenor Sans';*/
+  font-family: optima;
   letter-spacing: 0.1vw;
   color:#0b0b0b;
   font-size:1.5vw;
+  line-height: 4vh;
 }
 
 
 
-/*spacing and stuff for my three lines of intro*/
+/*spacing and stuff for my three lines of INDEX intro*/
 .text-container p{
-  line-height:5vh;
+  line-height:3vh;
   /*margin:45px 0px 25px;*/
 }
 
 .text-container{
+  z-index:3;
   position: absolute;
-  left:40%;
+  left:50%;
   top:30%;
-  right:10%;
+  right:5%;
   /*transform:translate(-13%,-42%);*/
 }
 
+/*Email me & View resume buttons in INDEX*/
 .text-container button{
   left:40%;
   width:10vw;
@@ -160,20 +197,26 @@ nav ul li a{
   color: white;
 }
 
+/*effects when buttons are clicked*/
 button:active{
   transform:scale(1.1);
 }
 
-/*profile picture*/
+/*profile picture in INDEX*/
 .model{
-  height:70vh;
+  z-index:1;
+  /*height:84.75vh; object-fit: cover;*/
+  height:80vh; object-fit:cover;
   position:absolute;
-  width:30vw; object-fit: cover;
-  left:5vw;
-  top:17.5vh;
+  width:45vw; 
+  left:2.5vw;
+  /*top:10.25vh;*/
+  top:15vh;
+  /*border-radius: 50% 50% 0 0;*/
   /*border:1vh solid #5C5D5F;*/
 }
 
+/*NOT NEEDED*/
 .about-container{
   width:90%;
   left:5vw;
@@ -192,6 +235,7 @@ button:active{
   height:250px;
 }*/
 
+/*Text box for ABOUT page*/
 .about-text{
   position: absolute;
   left:5vw;
@@ -203,6 +247,7 @@ button:active{
   align-items: center;
 }
 
+/*"About Me" headline*/
 .about-text p:nth-child(1){
   color:#000000;
   font-family: optima;
@@ -212,6 +257,7 @@ button:active{
   letter-spacing: 0.1vw;
 }
 
+/*One liner about jobs in ABOUT page*/
 .about-text p:nth-child(2){
   color:#3e3d3d;
   font-size:1.5vw;
@@ -221,6 +267,7 @@ button:active{
   letter-spacing: 0.1vw;
 }
 
+/*Body text in ABOUT page*/
 .about-text p:nth-child(3),
 .about-text p:nth-child(4),
 .about-text p:nth-child(5),
@@ -231,16 +278,25 @@ button:active{
   line-height: 3.5vh;
 }
 
-.about-text button{
-  width: 120px;
-  height: 40px;
-  color:#ffffff;
-  outline: none;
-  border:none;
-  font-family: calibri;
-  background-color: #262525;
+/*"About Me" headline*/
+.about-text p:nth-child(7){
+  color:#000000;
+  font-family: optima;
+  font-weight: bold;
+  font-size:2.5vw;
+  line-height: 0.1vh;
+  letter-spacing: 0.1vw;
 }
 
+/*"Skills" headline*/
+.about-text p:nth-child(8){
+  color:#373636;
+  font-family:'Tenor Sans';
+  font-size: 1.25vw;
+  line-height: 3.5vh;
+}
+
+/*Footer styling*/
 footer{
   height:30vh;
   display:flex;
@@ -259,6 +315,7 @@ footer{
   
 }
 
+/*"Contact me" headline in FOOTER*/
 footer p:nth-child(1){
   font-size:2.5vw;
   font-weight:bold;
@@ -266,6 +323,7 @@ footer p:nth-child(1){
   line-height:3.5vh;
 }
 
+/*SNS icons in FOOTER*/
 .social-icons a{
   width:4vw;
   height:4vw;
@@ -284,8 +342,6 @@ footer p:nth-child(1){
   display:inline-flex;
   align-items: center;
 }
-
-
 
 .social-icons a:hover{
   background-color: #ffffff;
