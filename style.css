@@ -26,19 +26,20 @@ nav{
   /*display: flex;
   justify-content: space-between;
   align-items:center;*/
-  height:10vh;
-  background-color: #E9E7E7;
-  border-bottom: 0.1vw solid #5C5D5F;
+  height:7vh;
+  background-color: #ffffff;
+  /*border-bottom: 0.1vw solid #5C5D5F;*/
   position:relative;
+  z-index: 1;
 }
 
 nav ul{
   display:inline-flex;
   width: 90vw;
-  align-items:center;
-  text-align: center;
+  /*align-items:center;
+  text-align: center;*/
   justify-content: space-between;
-  padding: 0px 0px 0px 5vw;
+  padding: 0px 3vw 0px 7vw;
 }
 
 /*headline font*/
@@ -46,17 +47,17 @@ nav ul li a{
   /*font-display: flex;*/
   /*margin: 4vw;*/
   /*margin: 0 4vw 0 4vw;*/
-  font-family: /*DM Sans;*/optima;
+  /*font-family: /*DM Sans;optima;*/
+  font-family: 'Merriweather';
   color:#5C5D5F;
-  font-size: 1.5vw;
-  letter-spacing: 0.2vh;
-  font-weight:500;
+  font-size: 1.25vw;
+  /*letter-spacing: 0.1vh;*/
   /*text-align:center;*/
 }
 
 /*bottom section of INDEX under headline*/
 .section-one{
-  height:80vh;
+  height:100vmin;
   background-color: #E9E7E7;
   background-size: cover;
   position:relative;
@@ -103,48 +104,57 @@ nav ul li a{
 .text-container{
   z-index:3;
   position: absolute;
-  left:45vw;
-  top:20vh;
+  left:5vw;
+  top:42.5vmin;
+  width:90vw;
+  text-align: center;
   /*transform:translate(-13%,-42%);*/
 }
 
 /*spacing and stuff for my three lines of INDEX intro*/
 .text-container p{
-  line-height:3vh;
-  letter-spacing: 0.1vw;
-  font-family: /*DM Sans;*/optima;
+  /*line-height:2vmin;*/
+  letter-spacing: 0.1vmin;
+  /*font-family: /*DM Sans;optima;*/
 }
 
 /*font for 3 lines of INDEX intro*/
 .text-container p:nth-child(1){
   /*font-family:'DM Sans';*/
-  color:#0b0b0b;
-  font-size: 2vw;
+  color:#191919;
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-family: 'Merriweather';
 }
 
 .text-container p:nth-child(2){
   /*font-family:'Tenor Sans';*/
-  font-weight:bold;
-  color:#0b0b0b;
-  font-size:3vw;
+  font-weight:550;
+  line-height: 10vmin;
+  color:#191919;
+  font-size:10vmin;
+  font-family: 'Merriweather';
 }
 .text-container p:nth-child(3){
   /*font-family:'Tenor Sans';*/
-  color:#0b0b0b;
-  font-size:1.5vw;
-  line-height: 4vh;
+  color:#191919;
+  font-size:4vmin;
+  font-weight: 300;
+  line-height: 4vmin;
+  font-family:'Merriweather';
+  margin: -4vmin 0 0 0;
 }
 
 /*Email me & View resume buttons in INDEX*/
 .text-container button{
   position:relative;
-  width:10vw;
-  height:3.5vw;
-  border-radius:1vw;
-  margin: 2vh 1vw 0 0;
-  font-family: /*DM Sans;*/optima;
+  width:25vmin;
+  height:6vmin;
+  border-radius:3vmin;
+  margin: 6vmin 1.5vmin 0 1.5vmin;
+  font-family: 'Merriweather';
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 2vmin;
   outline: none;
 }
 
@@ -171,10 +181,36 @@ button:active{
   transform:scale(1.1);
 }
 
+.model-container{
+  z-index:1;
+  /*top:7.5vh;*/ /*right:39.5vw;*/
+  height:50vmin; width:100vw;
+  /*:auto;width:50vw;*/
+  position:absolute;
+  text-align: center;
+  /*transform: scaleX(-1);*/
+}
 /*profile picture in INDEX*/
 .model{
+  z-index:1;
+  /*top:7.5vh;*/ /*right:39.5vw;*/
+  margin:5vmin 0 5vmin 0;
+  height:40vmin; width:40vmin; object-fit: cover;
+  /*:auto;width:50vw;*/
+  /*position:absolute;*/
+
+  /*transform: scaleX(-1);*/
+  border-radius: 50%;
+  border-width: 0.5vw;
+  border-style: solid;
+  border-color:#ffffff;
+}
+
+.rectangle {
   z-index:0;
-  height:70vh; width:40vw; object-fit: cover;
+  height: 30vmin;
+  width: 100vw;
+  background-color: #ffffff;
   position:absolute;
 }
 
@@ -199,7 +235,7 @@ button:active{
 
 /*bottom section of ABOUT under headline*/
 .section-two{
-  height:110vh;
+  height:120vh;
   /*background-color:#ded6cc;*/
   background-color: #E9E7E7; /*#E7E6E2*/
   background-size: cover;
@@ -211,8 +247,9 @@ button:active{
   position: absolute;
   left:5vw;
   /*top:20vh;*/
+  top:10vh;
   width:90vw;
-  height:90vh;
+  height:100vh;
   /*background-color: #f2f3ec;*/
   justify-content:space-evenly;
   align-items: center;
@@ -221,7 +258,7 @@ button:active{
 /*"About Me" headline*/
 .about-text p:nth-child(1){
   color:#000000;
-  font-family: optima;
+  font-family: Merriweather;/*'Crimson Text', serif;*/
   font-weight: bold;
   font-size:2.5vw;
   line-height: 0.1vh;
@@ -232,7 +269,7 @@ button:active{
 .about-text p:nth-child(2){
   color:#3e3d3d;
   font-size:1.5vw;
-  font-family:/*'Tenor Sans';*/optima;
+  font-family: Merriweather;
   font-weight: bold;
   line-height: 5vh;
   letter-spacing: 0.1vw;
@@ -244,20 +281,21 @@ button:active{
 .about-text p:nth-child(5),
 .about-text p:nth-child(6){
   color:#373636;
-  font-family:/*'Tenor Sans';*/optima;
+  font-family: Merriweather;
   font-size: 1.25vw;
-  line-height: 3.5vh;
+  line-height: 4vh;
 }
 
 
 /*"About Me" headline*/
 .about-text p:nth-child(7){
   color:#000000;
-  font-family: optima;
+  font-family: Merriweather;
   font-weight: bold;
   font-size:2.5vw;
   letter-spacing: 0.1vw;
-  line-height: 3vh;
+  line-height: 5vh;
+  margin: -2vh 0 0 0;
 }
 
 /*"Skills" headline*/
@@ -265,9 +303,9 @@ button:active{
 .about-text p:nth-child(9),
 .about-text p:nth-child(10){
   color:#373636;
-  font-family:/*'Tenor Sans';*/optima;
+  font-family: Merriweather;
   font-size: 1.25vw;
-  line-height: 3.5vh;
+  line-height: 4vh;
 }
 
 /*bottom section of LEARNING under headline*/
@@ -279,9 +317,45 @@ button:active{
   position: relative;
 }
 
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.1s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
 /*Footer styling*/
 footer{
-  height:20vh;
+  height:10vh;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -289,7 +363,7 @@ footer{
   color:#f2f3ec;
   font-family: DM Sans;
   letter-spacing: 0.2vw;
-  border-top: 0.1vw solid black;
+  border-top: 0.5vmin solid white;
   position:relative;
   /*border-left: 0.1vw solid #5C5D5F;
   border-right: 0.1vw solid #5C5D5F;*/
@@ -316,19 +390,19 @@ footer p:nth-child(1){
 
 /*SNS icons in FOOTER*/
 .social-icons a{
-  width:4vw;
-  height:4vw;
+  width:3.5vw;
+  height:3.5vw;
   justify-content: center;
   align-items:center;
   text-align: center;
   background-color: #5C5D5F;
-  margin: 0 2.5vw 0 2.5vw;
+  margin: 1vw 2.5vw 0 2.5vw;
   border-radius: 50%;
   color:#E9E7E7;
   /*display: inline-flex;*/
   display:flex;
   position: relative;
-  font-size:1.5vw;
+  font-size:1.25vw;
 
 }
 
